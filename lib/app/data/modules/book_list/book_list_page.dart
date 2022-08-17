@@ -1,24 +1,30 @@
 import 'package:book_list/app/data/model/book_model.dart';
-import 'package:book_list/app/data/modules/home/home_controller.dart';
+import 'package:book_list/app/data/modules/book_list/book_list_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class HomePage extends GetView<HomeController> {
-  const HomePage({Key? key}) : super(key: key);
+class BookListPage extends GetView<BookListController> {
+  const BookListPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home page'),
+        title: const Text('Book List'),
       ),
       body: controller.obx((state) {
         return ListView.builder(
           itemCount: state.length,
           itemBuilder: (_, index) {
             final BookModel item = state[index];
-            return ListTile(
-              title: Text(item.title),
+            return Card(
+              child: Column(
+                children: [
+                  ListTile(
+                    title: Text(item.title),
+                  )
+                ],
+              ),
             );
           },
         );

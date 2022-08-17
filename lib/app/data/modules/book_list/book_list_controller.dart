@@ -1,10 +1,10 @@
 import 'package:book_list/app/data/repository/interface_repository.dart';
 import 'package:get/get.dart';
 
-class HomeController extends GetxController with StateMixin {
+class BookListController extends GetxController with StateMixin {
   final InterfaceRepository _homeRepository;
 
-  HomeController(this._homeRepository);
+  BookListController(this._homeRepository);
 
   @override
   void onInit() {

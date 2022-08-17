@@ -1,5 +1,4 @@
-import 'package:book_list/app/data/modules/home/home_page.dart';
-import 'package:book_list/app/data/modules/home/home_bindings.dart';
+import 'package:book_list/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -14,13 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      getPages: [
-        GetPage(
-          name: "/",
-          page: () => HomePage(),
-          binding: HomeBindings(),
-        )
-      ],
+      initialRoute: '/',
+      getPages: Routes.routes,
     );
   }
 }
