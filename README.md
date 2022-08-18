@@ -1,16 +1,8 @@
-# book_list
+# book list
 
-A new Flutter project.
+App em flutter que inicialmente liste o titulo de todos os livros disponiveis em uma api.
+Permitindo clicar no titulo de cada livro e abrir para ver o titulo, subtitulo e texto tambem disponiveis na api.
 
-## Getting Started
+Api:  https://62507208977373573f3d77f0.mockapi.io/api/lib/library
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+O projeto utilizou o getX, para gerenciamento de estado e injeção do controller: https://pub.dev/packages/get.
